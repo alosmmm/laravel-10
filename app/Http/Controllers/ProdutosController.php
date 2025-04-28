@@ -18,4 +18,12 @@ class ProdutosController extends Controller
 
         return view('pages.produtos.paginacao', compact('findProduto'));
     }
+
+    public function delete (Request $request) {
+
+        $pesquisar = $request->pesquisar;
+        $findProduto = $this->produto->getProdutosPesquisarIndex(search: $pesquisar ?? '');
+
+        return view('pages.produtos.paginacao', compact('findProduto'));
+    }
 }
