@@ -19,5 +19,12 @@ class ProdutosSeeder extends Seeder
                 'valor' => '20.00'
             ]
         );
+
+        Produto::create(
+            [
+                'nome' => 'Teste',
+                'valor' => '23.00'
+            ]
+        );
     }
 }

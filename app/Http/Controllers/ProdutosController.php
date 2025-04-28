@@ -20,10 +20,10 @@ class ProdutosController extends Controller
     }
 
     public function delete (Request $request) {
+        $id = $request->id;
+        $buscaRegistro = Produto::find($id);
+        $buscaRegistro->delete();
 
-        $pesquisar = $request->pesquisar;
-        $findProduto = $this->produto->getProdutosPesquisarIndex(search: $pesquisar ?? '');
-
-        return view('pages.produtos.paginacao', compact('findProduto'));
+        return response()->json(['success'=> true]);
     }
 }

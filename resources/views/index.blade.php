@@ -198,16 +198,15 @@
 
     @yield('scripts')
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-
     <script defer src="/js/bootstrap.blundle.min"></script>
     <script src="/docs/5.3/assets/js/color-modes.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.3.2/dist/chart.umd.js" ></script>
     <script defer src="/js/dashboard.js"></script>
     <script defer src="/js/color-modes.js"></script>
-
     {{-- BlocUI loading --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.js"></script>
+    <script defer src="/js/projeto.js"></script>
 
 </body>
 
