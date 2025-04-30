@@ -1,5 +1,5 @@
 function deleteRegistroPaginacao(rotaUrl, idDoRegistro) {
-    if (confirm('Tem certeza que deseja excluir o produto?')) {
+    if (confirm('Tem certeza que deseja excluir o item?')) {
         $.ajax({
             url: rotaUrl,
             method: 'DELETE',
@@ -10,7 +10,7 @@ function deleteRegistroPaginacao(rotaUrl, idDoRegistro) {
             beforeSend: function () {
                 $.blockUI({
                     message: 'Carregando...',
-                    setTimeout: 2000,
+                    setTimeout: 2000, 
                 });
             },
         }).done(function (data) {

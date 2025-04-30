@@ -26,7 +26,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center gap-2" href="#">
+                    <a class="nav-link d-flex align-items-center gap-2" href="{{ route('clientes.index') }}">
                         <svg class="bi" aria-hidden="true"><use xlink:href="#people"/></svg>
                         Clientes
                     </a>
@@ -39,7 +39,7 @@
                 <li class="nav-item">
                     <a class="nav-link d-flex align-items-center gap-2" href="#">
                         <svg class="bi" aria-hidden="true"><use xlink:href="#gear-wide-connected"/></svg>
-                        Settings
+                        Configurações
                     </a>
                 </li>
                 <li class="nav-item">
